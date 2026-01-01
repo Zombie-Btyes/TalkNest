@@ -1,0 +1,221 @@
+/* Global reset and layout styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+body.dark-mode {
+  background-color: #2f3136;
+  color: white;
+  --footer-bg-color: #2f3136;
+  --footer-text-color: #f5f5f5;
+}
+
+:root {
+  --footer-bg-color: #f5f5f5;
+  --footer-text-color: #333;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+h1, h2, h3, h4, p {
+  color: #030303;
+  text-align: center;
+}
+
+p {
+  color: black;
+}
+
+li {
+  color: black;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 20px auto; /* Changed from 80px to auto for centering */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  color: black;
+}
+
+th {
+  background-color: #007bff;
+  color: rgb(8, 8, 8);
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+label {
+  color: black;
+}
+
+/* Buttons */
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+a {
+  color: rgb(119, 238, 173);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px !important;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+  background-color: #1f1f1f;
+  color: rgb(14, 235, 6);
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+/* Main Chat Layout - Now centered! */
+#main-chat {
+  background-color: white;
+  color: black;
+  overflow: auto;
+  width: 100%;
+  max-width: 1200px;
+  height: 85vh;
+  margin: 0 auto 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+body.dark-mode #main-chat {
+  background-color: #2f3136;
+  color: white;
+  border: 1px solid #444;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+  
+  #main-chat {
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto 1rem;
+    padding: 10px;
+  }
+  
+  table {
+    margin: 20px auto;
+  }
+  
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #main-chat {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  #root {
+    padding: 0.5rem;
+  }
+}
+
+/* Logo animations from the original index.css */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

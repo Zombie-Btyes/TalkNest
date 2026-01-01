@@ -1,0 +1,244 @@
+.screen-recorder-container {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.recorder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.recorder-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.recording-indicator {
+  color: #f44336;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #666;
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.recording-in-progress {
+  text-align: center;
+}
+
+.recording-timer {
+  margin-bottom: 20px;
+}
+
+.timer-display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  font-family: monospace;
+  margin-bottom: 5px;
+}
+
+.recording-type {
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.upload-progress {
+  margin: 20px 0;
+}
+
+.progress-label {
+  color: #666;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  transition: width 0.3s ease;
+}
+
+.recording-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.control-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.control-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.control-btn.pause {
+  background: #FF9800;
+  color: white;
+}
+
+.control-btn.resume {
+  background: #4CAF50;
+  color: white;
+}
+
+.control-btn.stop {
+  background: #f44336;
+  color: white;
+}
+
+.recorder-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.record-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.record-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.record-btn.screen {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.record-btn.voice {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.recording-info {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.recording-info p {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.recording-info ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #666;
+}
+
+.recording-info li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+/* Dark mode */
+body.dark-mode .screen-recorder-container {
+  background: #2f3136;
+  color: white;
+}
+
+body.dark-mode .recorder-header h3 {
+  color: white;
+}
+
+body.dark-mode .recorder-header {
+  border-bottom-color: #444;
+}
+
+body.dark-mode .close-btn:hover {
+  background: #40444b;
+  color: white;
+}
+
+body.dark-mode .timer-display {
+  color: white;
+}
+
+body.dark-mode .recording-type {
+  color: #aaa;
+}
+
+body.dark-mode .progress-label {
+  color: #aaa;
+}
+
+body.dark-mode .progress-bar {
+  background: #40444b;
+}
+
+body.dark-mode .recording-info {
+  background: #40444b;
+  color: #dcddde;
+}
+
+body.dark-mode .recording-info p {
+  color: #dcddde;
+}
+
+body.dark-mode .recording-info li {
+  color: #dcddde;
+}

@@ -1,0 +1,75 @@
+header {
+  background-color: #1f1f1f;
+  color: rgb(14, 235, 6);
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  width: 100%;
+  position: relative;
+}
+
+.NavLogo h1 {
+  margin: 0;
+  color: rgb(14, 235, 6);
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar a {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+.navbar a:hover {
+  color: #0ceb1e;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.dark-mode-button {
+  color: white;
+  font-weight: bold;
+  background-color: #444;
+  padding: 8px 15px;
+}
+
+.dark-mode-button:hover {
+  background-color: #333;
+}
+
+.loginButton {
+  color: white;
+  background-color: #4CAF50;
+  font-weight: bold;
+  padding: 8px 15px;
+}
+
+.loginButton:hover {
+  background-color: #45a049;
+}
+
+.navbar-toggler {
+  background-color: #2cd6d1;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  background-color: #26b6b2;
+}
