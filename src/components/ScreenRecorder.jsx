@@ -464,7 +464,7 @@ function ScreenRecorder({ username, room, onRecordingComplete, onCancel, onUploa
             <p><strong>Features:</strong></p>
             <ul>
               <li>✅ Unlimited recording time</li>
-              <li>✅ Auto-save to MongoDB</li>
+              <li>✅ Auto-save to local computer</li>
               <li>✅ Pause/Resume during recording</li>
               <li>✅ Real-time progress tracking</li>
               <li>✅ Fallback download if upload fails</li>
@@ -473,7 +473,7 @@ function ScreenRecorder({ username, room, onRecordingComplete, onCancel, onUploa
             <p className="note">
               <small>
                 Note: Recordings are saved in WebM format. 
-                Files are automatically uploaded to the server and stored in MongoDB.
+                {/* Files are automatically uploaded to the server and stored in MongoDB. */}
               </small>
             </p>
           </div>
