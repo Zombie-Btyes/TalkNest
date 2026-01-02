@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Message from './Message';
 import MessageInput from './MessageInput';
 import ScreenRecorder from './ScreenRecorder';
-import '../styles/Chatroom.css';
+import "../styles/ChatRoom.css";
 
 const API_BASE = 'http://localhost:3000';
 
